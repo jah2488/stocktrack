@@ -1,0 +1,38 @@
+.navbar {
+  &__title { // .navbar__title
+    font-family: 'Lato', sans-serif;
+  }
+  &__container { // .navbar__container
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: #eee;
+    padding: 1rem;
+  }
+  &__item { // .navbar__item
+    &--small { // .navbar__item--small
+      font-size: 14pt;
+    }
+    &--large { // .navbar__item--large
+      height: 2rem;
+      font-size: 24pt;
+    }
+    &--link { // .navbar__item--link
+      color: #eee;
+      text-decoration: none;
+      flex-wrap: nowrap;
+      width: max-content;
+      margin-right: 12px;
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+    justify-content: space-between;
+    flex: 0 0 50%;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+  }
+}

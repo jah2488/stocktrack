@@ -1,0 +1,22 @@
+.flash-notice, .flash-alert {
+  margin: 5px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  color: #fff;
+  background: rgba(0,0,0,0.9);
+}
+
+.flash-success {
+  background: #28a745;
+}
+.flash-alert {
+  background: #dc3545;
+}
+.flash-warning {
+  background: #ffc107;
+  color: #000;
+}
+.flash-notice {
+  background: #17a2b8;
+}
