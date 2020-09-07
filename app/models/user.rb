@@ -1,4 +1,7 @@
+# typed: strict
 class User < ApplicationRecord
+  extend T::Sig
+  
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -23,9 +26,9 @@ class User < ApplicationRecord
   validates :email, 
     format: { with: Devise.email_regexp }
 
-
+  sig {params(access_token: T.untyped).returns(User)}
   def self.from_omniauth(access_token)
-    data = access_token.info
+    data = access_token['info']
     where(email: data['email']).first_or_initialize do |user|
       # user.name = data['name']
       user.password = Devise.friendly_token[0,20]
