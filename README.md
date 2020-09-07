@@ -1,7 +1,7 @@
 # Installation
 
 ## Alias Localhost
-  - run `sudo nano /etc/host`
+  - run `sudo vim /etc/host`
   - add `127.0.0.1 stocktrack.com`
 
 ## Rails
@@ -14,3 +14,6 @@
 # Run server
   - bundle exec rails s
   - Navigate to `http://stocktrack.com:3000`
+
+## View On Heroku
+  - https://stock-insight.herokuapp.com/
