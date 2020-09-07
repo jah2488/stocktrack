@@ -1,3 +1,5 @@
+@import '_variables';
+
 .new_session {
   &__container { // .new_session__container
     display: flex;
@@ -12,7 +14,7 @@
     min-width: 20rem;
     max-width: 30rem;
     width: 50%;
-    border: 1px solid #333;
+    border: 1px solid $gray;
     border-radius: 4px;
   }
   &__form { // .new_session__form
@@ -22,7 +24,7 @@
 
 .session-header,
 .registration-header {
-  background: #333;
+  background: $gray;
   color: #eee;
   margin: 0;
   padding: 0.5rem;

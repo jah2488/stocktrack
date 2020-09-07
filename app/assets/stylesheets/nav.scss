@@ -1,3 +1,5 @@
+@import '_variables';
+
 .navbar {
   &__title { // .navbar__title
     font-family: 'Lato', sans-serif;
@@ -6,8 +8,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #333;
-    color: #eee;
+    background: $gray;
+    color: $white;
     padding: 1rem;
   }
   &__item { // .navbar__item
@@ -19,7 +21,7 @@
       font-size: 24pt;
     }
     &--link { // .navbar__item--link
-      color: #eee;
+      color: $white;
       text-decoration: none;
       flex-wrap: nowrap;
       width: max-content;

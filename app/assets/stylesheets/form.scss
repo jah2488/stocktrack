@@ -1,14 +1,16 @@
+@import '_variables';
+
 .form {
   &__link { // .form__link
     text-decoration: none;
-    color: #fff;
+    color: $white;
     display: flex;
     justify-content: center;
   }
   &__button { // .form__button
     &--google { // .form__button--google
       border: none;
-      background: #DB4437;
+      background: $red;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -43,7 +45,7 @@
   &.submit {
     background: #4285F4;
     border: none;
-    color: #fff;
+    color: $white;
     height: 2.5rem;
     display: flex;
     justify-content: center;

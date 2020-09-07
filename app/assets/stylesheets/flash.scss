@@ -1,22 +1,23 @@
+@import '_variables.scss';
+
 .flash-notice, .flash-alert {
   margin: 5px;
   padding: 10px 15px;
   border-radius: 4px;
   margin-bottom: 5px;
-  color: #fff;
-  background: rgba(0,0,0,0.9);
+  color: $white;
 }
 
 .flash-success {
-  background: #28a745;
+  background: $green;
 }
 .flash-alert {
-  background: #dc3545;
+  background: $red;
 }
 .flash-warning {
-  background: #ffc107;
-  color: #000;
+  background: $yellow;
+  color: $black;
 }
 .flash-notice {
-  background: #17a2b8;
+  background: $light-blue;
 }
