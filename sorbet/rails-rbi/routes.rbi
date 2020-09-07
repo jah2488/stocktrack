@@ -14,6 +14,118 @@ class ActionMailer::Base
 end
 
 module GeneratedUrlHelpers
+  # Sigs for route /users/sign_in(.:format)
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def new_user_session_path(*args, **kwargs); end
+
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def new_user_session_url(*args, **kwargs); end
+
+  # Sigs for route /users/sign_in(.:format)
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def user_session_path(*args, **kwargs); end
+
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def user_session_url(*args, **kwargs); end
+
+  # Sigs for route /users/sign_out(.:format)
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def destroy_user_session_path(*args, **kwargs); end
+
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def destroy_user_session_url(*args, **kwargs); end
+
+  # Sigs for route /users/auth/google_oauth2(.:format)
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def user_google_oauth2_omniauth_authorize_path(*args, **kwargs); end
+
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def user_google_oauth2_omniauth_authorize_url(*args, **kwargs); end
+
+  # Sigs for route /users/auth/google_oauth2/callback(.:format)
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def user_google_oauth2_omniauth_callback_path(*args, **kwargs); end
+
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def user_google_oauth2_omniauth_callback_url(*args, **kwargs); end
+
+  # Sigs for route /users/password/new(.:format)
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def new_user_password_path(*args, **kwargs); end
+
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def new_user_password_url(*args, **kwargs); end
+
+  # Sigs for route /users/password/edit(.:format)
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def edit_user_password_path(*args, **kwargs); end
+
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def edit_user_password_url(*args, **kwargs); end
+
+  # Sigs for route /users/password(.:format)
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def user_password_path(*args, **kwargs); end
+
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def user_password_url(*args, **kwargs); end
+
+  # Sigs for route /users/cancel(.:format)
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def cancel_user_registration_path(*args, **kwargs); end
+
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def cancel_user_registration_url(*args, **kwargs); end
+
+  # Sigs for route /users/sign_up(.:format)
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def new_user_registration_path(*args, **kwargs); end
+
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def new_user_registration_url(*args, **kwargs); end
+
+  # Sigs for route /users/edit(.:format)
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def edit_user_registration_path(*args, **kwargs); end
+
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def edit_user_registration_url(*args, **kwargs); end
+
+  # Sigs for route /users(.:format)
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def user_registration_path(*args, **kwargs); end
+
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def user_registration_url(*args, **kwargs); end
+
+  # Sigs for route /users/new(.:format)
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def new_users_path(*args, **kwargs); end
+
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def new_users_url(*args, **kwargs); end
+
+  # Sigs for route /users/edit(.:format)
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def edit_users_path(*args, **kwargs); end
+
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def edit_users_url(*args, **kwargs); end
+
+  # Sigs for route /users(.:format)
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def users_path(*args, **kwargs); end
+
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def users_url(*args, **kwargs); end
+
+  # Sigs for route /
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def root_path(*args, **kwargs); end
+
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def root_url(*args, **kwargs); end
+
   # Sigs for route /rails/action_mailbox/postmark/inbound_emails(.:format)
   sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
   def rails_postmark_inbound_emails_path(*args, **kwargs); end

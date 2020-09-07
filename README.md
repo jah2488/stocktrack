@@ -20,3 +20,8 @@
 
 # Feature Roadmap
   - https://github.com/jah2488/stocktrack/projects/1
+
+# Sorbet
+  - docs https://sorbet.org/docs/overview
+  - init `srb init`
+  - run `srb tc`
