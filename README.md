@@ -15,5 +15,8 @@
   - bundle exec rails s
   - Navigate to `http://stocktrack.com:3000`
 
-## View On Heroku
+# View On Heroku
   - https://stock-insight.herokuapp.com/
+
+# Feature Roadmap
+  - https://github.com/jah2488/stocktrack/projects/1
