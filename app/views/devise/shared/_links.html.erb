@@ -1,0 +1,28 @@
+<%- if controller_name != 'sessions' %>
+  <hr />
+  <br />
+  <%= link_to new_session_path(resource_name), class: "form__link" do %>
+    <div class="field full submit">
+      Log in
+    </div>
+  <% end %>
+  <br />
+<% end %>
+
+<%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+  <%= link_to new_registration_path(resource_name), class: "form__link" do %>
+    <div class="field full submit">
+      Create an Account
+    </div>
+  <% end %>
+<% end %>
+
+<%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+  <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %>
+  <br />
+<% end %>
+
+<%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
+  <%= link_to "Didn't receive unlock instructions?", new_unlock_path(resource_name) %>
+  <br />
+<% end %>

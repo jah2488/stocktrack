@@ -1,0 +1,50 @@
+<div class="new_session__container">
+  <div class="new_session__content">
+    <h2 class="session-header">Log in</h2>
+
+    <div class="new_session__form">
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="form__item">
+          <%= f.label :email %>
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "field full", tabindex: "1" %>
+        </div>
+
+        <div class="form__item">
+          <div class="form__passwords">
+            <%= f.label :password %>
+            <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+              <%= link_to "Forgot your password?", new_password_path(resource_name), tabindex: "2" %>
+            <% end %>
+          </div>
+          <%= f.password_field :password, autocomplete: "current-password", class: "field full", tabindex: "1" %>
+        </div>
+
+        <% if devise_mapping.rememberable? %>
+          <div class="form__item">
+            <%= f.check_box :remember_me, tabindex: "1" %>
+            <%= f.label :remember_me %>
+          </div>
+        <% end %>
+
+        <div class="actions">
+          <%= f.submit "Sign in", class: "field full submit", tabindex: "1" %>
+        </div>
+      <% end %>
+
+      <br />
+      <hr />
+      <br />
+
+      <%= link_to user_google_oauth2_omniauth_authorize_path, class: "form__link" do %>
+        <div class="field full form__button--google">
+          Log in with Google
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="new_session__content">
+    <div class="new_session__form">
+      <%= render "devise/shared/links" %>
+    </div>
+  </div>
+</div>

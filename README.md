@@ -1,24 +1,16 @@
-# README
+# Installation
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Alias Localhost
+  - run `sudo nano /etc/host`
+  - add `127.0.0.1 stocktrack.com`
 
-Things you may want to cover:
+## Rails
+  1. bundle install
+  2. bundle exec rake db:create db:migrate
 
-* Ruby version
+## Webpacker / JavaScript
+  1. yarn install
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Run server
+  - bundle exec rails s
+  - Navigate to `http://stocktrack.com:3000`

@@ -9,6 +9,10 @@ gem 'puma', '~> 4.1'
 gem 'sass-rails', '>= 6'
 gem 'webpacker', '~> 4.0'
 gem 'sorbet-rails'
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
+
 # gem 'redis', '~> 4.0'
 # gem 'bcrypt', '~> 3.1.7'
 # Use Active Storage variant
@@ -17,6 +21,7 @@ gem 'sorbet-rails'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
+  gem 'dotenv-rails'
   gem 'pry-rails', platforms: [:mri, :mingw, :x64_mingw]
 end
 

@@ -1,0 +1,31 @@
+@import '_variables';
+
+.new_session {
+  &__container { // .new_session__container
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 20rem;
+    margin: 6rem 0;
+  }
+  &__content { // .new_session__content
+    margin: 0 6rem;
+    margin-bottom: 1rem;
+    min-width: 20rem;
+    max-width: 30rem;
+    width: 50%;
+    border: 1px solid $gray;
+    border-radius: 4px;
+  }
+  &__form { // .new_session__form
+    padding: 1rem;
+  }
+}
+
+.session-header,
+.registration-header {
+  background: $gray;
+  color: #eee;
+  margin: 0;
+  padding: 0.5rem;
+}
