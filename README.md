@@ -25,3 +25,20 @@
   - docs https://sorbet.org/docs/overview
   - init `srb init`
   - run `srb tc`
+
+# IEX Cloud
+- https://github.com/dblock/iex-ruby-client
+
+### Initializing
+  - client = IEX::Api::Client.new
+
+### Free Tier endpoints
+  - client.quote('SPY')
+  - client.company('SPY')
+  - client.logo('SPY')
+  - client.news('SPY')
+  - client.chart('SPY')
+  - client.key_stats('SPY')
+  - client.dividends('SPY', '6m')
+  - client.earnings('MSFT')
+  - client.crypto('BTCUSDT')
